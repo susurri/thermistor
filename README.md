@@ -15,7 +15,8 @@ NXFT15XH103FA2B は後述のフィッティングがきれいにできなかっ�
 
 直列に抵抗を入れて抵抗分圧を測定する回路を想定しています。
 直列に入れる抵抗は精度の良いものを使用してください。
-使用例は
+抵抗とサーミスタにかける電圧を AREF に入れます。
+ライブラリーの使用例は
 [examples/thermistor/thermistor.ino](examples/thermistor/thermistor.ino)
 にあります。抵抗値(K Ohm) とピン番号を引数にして Thermister_型番 クラスの
 インスタンスを生成します。readTempC() メソッドで温度（摂氏）が返ります。
